@@ -1,0 +1,26 @@
+name: Wavesurvival
+version: '${project.version}'
+main: net.pixelpacker.wavesurvival.WavesurvivalMain
+api-version: 1.19
+commands:
+  createdb:
+    description: Let's you create DB
+    permission: wavesurvival.admin
+    usage: /createdb (dbname)
+    aliases: dbcreate
+    permission-message: You don't have permission to use this.
+  addtodb:
+    description: Add an entry to DB
+    permission: wavesurvival.admin
+    usage: /addtodb (dbname) (dbtable) (dbcolumn) (dbentry)
+    permission-message: You don't have permission to use this.
+  addtable:
+    description: Create a new table
+    permission: wavesurvival.admin
+    usage: /addtable (dbname) (tablename) (columnname)
+    permission-message: You don't have permission to use this.
+  readdb:
+    description: Read a section from a db.
+    permission: wavesurvival.admin
+    usage: /readdb (dbname) (tablename) (columnname) (tableentynumber)
+    permission-message: You don't have the permission to use this.
